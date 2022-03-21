@@ -11,23 +11,40 @@ int main()
 	int iloczyn;
 
 	cout << "NWD" << endl;
-	    cout << "Podaj pierwsza liczbe: ";
-		cin >> a;
-		cout << "Podaj druga liczbe : ";
-		cin >> b;
+	cout << "Podaj pierwsza liczbe: ";
+	cin >> a;
+	cout << "Podaj druga liczbe : ";
+	cin >> b;
 
-		while (a != b)
+	while (a != b)
+	{
+		if (a < b)
 		{
-			if ( a < b)
-			{
-				b = b - a;
-			}
-			else
-			{
-				a = a - b;
-			}
+			b = b - a;
 		}
-		cout << "Najwiekszy wspolny dzielnik: " << a;
+		else
+		{
+			a = a - b;
+		}
+	}
+	cout << "Najwiekszy wspolny dzielnik: " << a;
+
+	iloczyn = a * b;
+	while (a != b)
+	{
+		if (a < b)
+		{
+			b = b - a
+		}
+
+		else
+		{
+			a = a - b
+		}
+		
+		nww = iloczyn / a
+	}
+	cout << "Najwieksza wspolna wielokrotnosc" << a;
 	
 }
 
